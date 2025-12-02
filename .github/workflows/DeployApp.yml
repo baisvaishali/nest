@@ -53,7 +53,7 @@ jobs:
             -t ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/${{ env.ECR_IMAGE }}:latest \
             --push .
 
-      # - name: Deploy to ECS
+      # - name: Deploy to ECS ok
       #   uses: imehedi/actions-awscli-v2@latest
       #   with:
       #     args: ecs update-service --cluster ${{ env.ECS_CLUSTER }} --service ${{ vars.ECS_SERVICE }} --force-new-deployment
